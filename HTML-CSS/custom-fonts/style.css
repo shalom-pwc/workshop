@@ -1,0 +1,19 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1em;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+h1, h2, h3 {
+  font-family: 'Noto serif', serif;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 500;
+}
