@@ -106,27 +106,27 @@ myList.push({
     deadline: "2021.05.15",
     completed: false
 });
-
+//Add list
 function addlist(obj){
   myList.push(obj);
  show(myList);
 }
 addlist( {
-  text: "learn selu",
+  text: "learn AI",
   deadline: "2020.05.15",
   completed: false
 }
 );
 
 
-
+//change list
 function changelist(index,text){
   myList[index]= text;
  show(myList);
 }
 
 changelist(0,{
-  text: "learn shalom",
+  text: "learn C++",
   deadline: "2020.05.15",
   completed: false
 });
@@ -160,7 +160,7 @@ function changekeyValue(index, key, value){
 }
 
 // In order to
-changekeyValue(1, "text", "dani");
+changekeyValue(1, "text", "Java");
 show(myList);
 
 
@@ -176,16 +176,4 @@ show(myList);
 
 
 
- let cityFacts = {
-
-    name:"Asmara",
-    population:1000000,
-    continent:"Africa",
-
-    displayCityFacts: function(){
-      console.log(cityFacts.name + ' has a population of ' + cityFacts.population + ' and is situated in ' + cityFacts.continent);
-    }
- }
  
-
-cityFacts.displayCityFacts();

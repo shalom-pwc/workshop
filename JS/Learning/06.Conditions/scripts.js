@@ -57,15 +57,24 @@ if((num === 5 && num > 5) || (num2 == 20 || num2 > 20)){
 function message(){
 let date = new Date();
  let hr = date.getHours();
- /* var m = today.getMinutes();
-  var s = today.getSeconds(); */
+ /* let m = today.getMinutes();
+  let s = today.getSeconds(); */
    if(hr < 8){
       console.log("What are you doing that early?");
    
    }
-   else{
-      console.log("hi");
+   if(hr>8 && hr<12){
+      console.log("Good morning");
+   }
+   if(hr>12 && hr<17){
+      console.log("Good afternoon");
+   }
+   if(hr>=17 && hr<=21){
+      console.log("Good evening");
+   }
+   if(hr>21){
+      console.log("Good night");
    }
  
 }
-message();
+message(15);

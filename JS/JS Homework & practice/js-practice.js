@@ -147,3 +147,121 @@ console.log("singular");
     
 isPlural('change');
     
+
+
+//Maximum Edge of a Triangle
+function nextEdge(side1, side2) {
+	let thirdSide = (side1 + side2) - 1
+	return thirdSide;
+}
+nextEdge(8,10);
+
+//Area of a tringle
+function triArea(base, height) {
+	let area = (base * height) / 2;
+	return area;
+}
+triArea(3,2);
+
+//Find a square of a number
+function squared(a) {
+	let squaredNum = a*a;
+	return squaredNum;
+}
+squared(5);
+
+
+
+//Change hours in to seconds
+function howManySeconds(hours){
+let calHr= hours  *3600;
+return calHr;
+}
+howManySeconds(2);
+
+// Increment a number by one 
+function addition(num) {
+	let nextNum=num+1;
+	return nextNum;
+}
+addition(0);
+
+
+
+//booleans
+
+let shopping = [
+  {
+    text: "banana",
+    kg: "1kg",
+    completed: true
+  },
+  {
+    text: "tomato",
+    kg: "2kg",
+    completed: false
+  },
+  {
+    text: "orange",
+    kg: "1kg",
+    completed: true
+  }
+]
+
+console.log(shopping);
+
+shopping.push({
+  text: "onion",
+  kg: "1kg",
+  completed: false
+});
+//Add shopping
+function addShopping(tobuy){
+  shopping.push(tobuy);
+}
+addShopping(shopping.push({
+  text: "pasta",
+  kg: "5kg",
+  completed: true
+})
+);
+
+//change shopping
+function changeShopping(index,text){
+  shopping[index]=text;
+}
+changeShopping([0],{
+  text: "mango",
+  kg: "1/2kg",
+  completed: true
+})
+
+
+//Delete shopping
+function deleteShopping(index,howManyItems){
+  shopping.splice(index,howManyItems);
+}
+deleteShopping(2,1);
+
+
+//refactoring
+function newShopping(newText,newOption,newCompleted=false){
+  shopping.push(
+    {text: newText,
+    kg: newOption,
+    completed: newCompleted
+  })
+}
+newShopping("Shirt","S");
+
+//Change key value
+
+function changeKeyValue(index,key,value){
+  shopping[index][key]= value;
+console.log(shopping);
+}
+changeKeyValue(1,"text","salade");
+
+
+//Conditions
+
