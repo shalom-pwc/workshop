@@ -265,3 +265,91 @@ changeKeyValue(1,"text","salade");
 
 //Conditions
 
+
+
+
+//Using the ternary operator create a condition who checks if today is Tuesday
+
+
+let days = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
+today = (days[1] === 'tuesday') ? 'True' : 'false';
+
+
+
+//Equality of 3 Values
+function equal(a, b, c) {
+  if (a === b && a === c) {
+         return 3;
+  }
+  else if (a === b || a === c || b === c) {
+         return 2;
+  }
+   else{
+       return 0;
+   }
+   }
+ equal(1, 2, 3);
+
+
+ //edabit - Strictly Increasing or Decreasing
+
+ function check(array) {
+	for( i=1; i < array.length; i++){
+		 if(array[i] <= array[i-1] && array[i] >= array[i+1]){
+			return "decreasing";
+		 }else if((array[i] > array[i-1])  && array[i] > array[i+1] || array[i] == array[i-1]){
+			return "neither";
+		} 
+		 else {
+			return "increasing";
+		}
+	}
+}
+
+
+//Count genders
+
+let countGender = [
+  {
+    name: 'selam',
+    gender: 'FEMAL'
+  },
+  {
+    name: 'Dani',
+    gender: 'MALE'
+  },
+  {
+    name: 'Eva',
+    gender: 'FEMAL'
+  },
+  {
+    name: 'Sami',
+    gender: 'MALE'
+  },
+  {
+    name: 'Abel',
+    gender: 'MALE'
+  },
+  {
+    name: 'Fiori',
+    gender: 'FEMAL'
+  },
+];
+
+for(let i = 0; i <= countGender.length; i++){
+   let male = countGender.gender.MALE
+   let femal = countGender.gender.FEMAL
+      if(countGender.gender[i]=="MALE"){
+        return 'male';
+      }
+      else{
+        return 'femal';
+      }
+      console.log("My list contains " + femal + "girls and" + male + "boys")
+      
+}
+
+
+const h1 = document.querySelector('h1');
+
+console.log(h1.innerHTML);
